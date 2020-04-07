@@ -9,7 +9,7 @@ const path = require('path');
 const port = 5001;
 
 // vertel aan de webserver waar de publieke bestanden zitten
-app.use(express.static('public'));
+app.use(express.static(__dirname+'/public'));
 
 // EJS configureren
 app.set('view engine', 'ejs');
