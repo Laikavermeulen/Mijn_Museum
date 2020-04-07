@@ -1,0 +1,11 @@
+<div class="design">
+<article>
+  <h3><%=post.title %></h3>
+  <img src="/images/<%=post.image %>" alt="">
+  <% for(var t=0; t<post.tags.length; t++) { %>
+    <span><%=post.tags[t] %></span>
+  <% } //end forloop %>
+  <address class="author"><%=post.author %></address>
+  <a href="/project/<%=index %>">Klik hier voor meer info</a>
+</article>
+</div>

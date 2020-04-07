@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+<%- include("nav"); -%>
+
+<main>
+  <div class="button-group filters-button-group">
+    <button class="button is-checked" data-filter="*">Alles</button>
+    <button class="button" data-filter=".Hout">Hout</button>
+    <button class="button" data-filter=".Buismateriaal">Buismateriaal</button>
+    <button class="button" data-filter=".Leer">Leer</button>
+    <button class="button" data-filter=".Plastic">Plastic</button>
+    <button class="button" data-filter=".Metaal">Metaal</button>
+  </div>
+
+    </main>
+<div class="grid">
+  <% for (let i=0; i<posts.length; i++) { %>
+    <section class="element-item <%=posts[i].tags %>">
+      <%- include('projectpost', {post: posts[i], index: i}); -%>
+    </section>
+  <% } // close forloop %>
+
+  </div>
+  <script src="/js/isotope.js"></script>
+  <script src="/js/script.js"></script>
+
+<%- include("footer"); -%>

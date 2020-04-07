@@ -1,0 +1,185 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+
+h3{
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: grey;
+  padding: 0.3rem;
+}
+
+.begin p {
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+  margin: auto 1.5rem;
+}
+
+header h1 {
+  text-align:  center;
+  color: white;
+  padding-top: 0.5rem;
+}
+
+header {
+  background-color: black;
+  height: 5rem;
+}
+
+.begin {
+  background-image: url(/images/achtergrond.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  width: 7rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.nav a:hover{
+color: white;
+background-color: black;
+
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 4.7rem;
+}
+
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #FFE4BB;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(1fr,10);
+}
+
+.design article {
+  display: block;
+  padding-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.design article img{
+  max-width: 200px;
+  display: block;
+  margin: 0 auto,
+}
+
+footer {
+  display: block;
+  margin: 1.5rem auto 1rem;
+  text-align: center;
+}
+
+
+.detail h3 {
+  text-align: left;
+  background-color: white;
+  padding: 0rem;
+}
+.detail img {
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+.detail {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+main {
+  margin-left: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  margin-bottom: -0.3rem;
+  background: white;
+  border: none;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: black;
+  color: white;
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+button, input, textarea {
+  display: block;
+  margin: 0.5rem 0 0.7rem 0;
+}
+
+.contact {
+  margin-left: 1rem;
+}
+
+.contact h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: black;
+  padding: 0.5em 1.0em;
+  border: none;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+}
+
+textarea {
+  display: block;
+}
+
+input[type="submit"]:hover {
+  background-color: grey;
+  color: white;
+  display: block;
+}
