@@ -1,1 +1,1 @@
-web:node museum.js
+web: node museum.js
